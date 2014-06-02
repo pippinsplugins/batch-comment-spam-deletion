@@ -32,12 +32,12 @@ class PW_BCPD {
 
 		self::$per_batch = apply_filters( 'pw_bcpd_comments_per_batch', 100 );
 
-		add_action( 'admin_init', array( 'PW_BCPD', 'text_domain' ) );
-		add_action( 'admin_menu', array( 'PW_BCPD', 'admin_menu' ) );
-		add_action( 'admin_head', array( 'PW_BCPD', 'admin_head' ) );
-		add_action( 'admin_notices', array( 'PW_BCPD', 'admin_notices' ) );
-		add_action( 'manage_comments_nav', array( 'PW_BCPD', 'comments_nav' ) );
-		add_action( 'admin_init', array( 'PW_BCPD', 'process_batch' ) );
+		add_action( 'admin_init',          array( 'PW_BCPD', 'text_domain'   ) );
+		add_action( 'admin_menu',          array( 'PW_BCPD', 'admin_menu'    ) );
+		add_action( 'admin_head',          array( 'PW_BCPD', 'admin_head'    ) );
+		add_action( 'admin_notices',       array( 'PW_BCPD', 'admin_notices' ) );
+		add_action( 'manage_comments_nav', array( 'PW_BCPD', 'comments_nav'  ) );
+		add_action( 'admin_init',          array( 'PW_BCPD', 'process_batch' ) );
 
 	}
 
