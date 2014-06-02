@@ -156,7 +156,7 @@ class PW_BCPD {
 				<?php endif; ?>
 			</div>
 			<script type="text/javascript">
-				document.location.href = "edit-comments.php?action=pw_bcsd_process&step=<?php echo $step; ?>&total=<?php echo $total; ?>";
+				document.location.href = "edit-comments.php?action=pw_bcsd_process&step=<?php echo $step; ?>&total=<?php echo $total; ?>&_wpnonce=<?php echo wp_create_nonce( 'pw-bscd-nonce' ); ?>";
 			</script>
 		</div>
 		<?php
@@ -175,6 +175,10 @@ class PW_BCPD {
 		}
 
 		if( ! current_user_can( 'moderate_comments' ) ) {
+			return;
+		}
+
+		if( ! wp_verify_nonce( $_GET['_wpnonce'], 'pw-bscd-nonce' ) ) {
 			return;
 		}
 
