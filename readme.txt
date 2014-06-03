@@ -14,7 +14,7 @@ Modifies the Empty Spam action in WordPress to process the spam deletion in batc
 
 Modifies the Empty Spam action in WordPress to process the spam deletion in batches, allowing you to delete thousands or even hundreds of thousands of spam comments at once without killing your server.
 
-Have you found a bug or have a suggestion or improvement you'd like to submit? This plugin is available on [Github](https://github.com/pippinsplugins/Transients-Manager/) and pull requests are welcome!
+Have you found a bug or have a suggestion or improvement you'd like to submit? This plugin is available on [Github](https://github.com/pippinsplugins/batch-comment-spam-deletion) and pull requests are welcome!
 
 == Installation ==
 
