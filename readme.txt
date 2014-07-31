@@ -6,7 +6,7 @@ Donate link: http://pippinsplugins.com/support-the-site
 Tags: comments, spam, comment
 Requires at least: 3.6
 Tested up to: 4.0
-Stable Tag: 1.0
+Stable Tag: 1.0.1
 
 Modifies the Empty Spam action in WordPress to process the spam deletion in batches instead of all at once.
 
@@ -23,6 +23,10 @@ Have you found a bug or have a suggestion or improvement you'd like to submit? T
 3. Use the "Empty Spam" button to clear out all spam comments
 
 == Changelog ==
+
+= 1.0.1 =
+
+* Fix: The Empty Trash button was accidentally removed from the Trash page
 
 = 1.0 =
 
