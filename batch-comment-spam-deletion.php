@@ -104,6 +104,10 @@ class PW_BCPD {
 			return;
 		}
 
+		if( 'spam' != $_GET['comment_status'] ) {
+			return;
+		}
+
 		echo '<style>#delete_all { display:none; }</style>';
 
 	}
