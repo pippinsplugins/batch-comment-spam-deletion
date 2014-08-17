@@ -38,6 +38,7 @@ function pw_bcsd_per_batch( $per_batch ) {
 
 	return $per_batch;
 }
+add_filter( 'pw_bcpd_comments_per_batch', 'pw_bcsd_per_batch' );
 `
 
 2. You can modify it by adding a constant to your `wp-config.php` file:
