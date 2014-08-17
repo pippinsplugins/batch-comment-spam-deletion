@@ -22,7 +22,29 @@ Have you found a bug or have a suggestion or improvement you'd like to submit? T
 2. Go to Comments > Spam
 3. Use the "Empty Spam" button to clear out all spam comments
 
+== Frequently Asked Questions ==
+
 == Changelog ==
+
+= Can I change the number of comments deleted per batch? =
+
+Yes, there are two ways to do it.
+
+1. You can modify the number via a filter, like this:
+
+`
+<?php
+function pw_bcsd_per_batch( $per_batch ) {
+	
+	$per_batch = 50;
+
+	return $per_batch;
+}
+`
+
+2. You can modify it by adding a constant to your `wp-config.php` file:
+
+`define( 'PW_BCPD_PER_BATCH', 50 );`
 
 = 1.0.2 =
 
