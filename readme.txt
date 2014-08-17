@@ -6,7 +6,7 @@ Donate link: http://pippinsplugins.com/support-the-site
 Tags: comments, spam, comment
 Requires at least: 3.6
 Tested up to: 4.0
-Stable Tag: 1.0.2
+Stable Tag: 1.0.3
 
 Modifies the Empty Spam action in WordPress to process the spam deletion in batches instead of all at once.
 
@@ -45,6 +45,10 @@ function pw_bcsd_per_batch( $per_batch ) {
 `define( 'PW_BCPD_PER_BATCH', 50 );`
 
 == Changelog ==
+
+= 1.0.3 =
+
+* New: added the ability to change the per-batch number via the PW_BCPD_PER_BATCH constant
 
 = 1.0.2 =
 
