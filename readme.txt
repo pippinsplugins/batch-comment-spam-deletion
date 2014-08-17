@@ -24,8 +24,6 @@ Have you found a bug or have a suggestion or improvement you'd like to submit? T
 
 == Frequently Asked Questions ==
 
-== Changelog ==
-
 = Can I change the number of comments deleted per batch? =
 
 Yes, there are two ways to do it.
@@ -45,6 +43,8 @@ function pw_bcsd_per_batch( $per_batch ) {
 2. You can modify it by adding a constant to your `wp-config.php` file:
 
 `define( 'PW_BCPD_PER_BATCH', 50 );`
+
+== Changelog ==
 
 = 1.0.2 =
 
