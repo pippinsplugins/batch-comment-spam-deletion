@@ -152,7 +152,7 @@ class PW_BCPD {
 	public static function processing_page() {
 		$step    = isset( $_GET['step'] )        ? absint( $_GET['step'] )   : 1;
 		$total   = isset( $_GET['total'] )       ? absint( $_GET['total'] )  : false;
-		$deleted = round( ( $step *  $this->per_batch ), 0 );
+		$deleted = round( ( $step * self::$per_batch ), 0 );
 		?> 
 		<div class="wrap">
 			<h2><?php _e( 'Empty Spam', 'pw-bcsd' ); ?></h2>
