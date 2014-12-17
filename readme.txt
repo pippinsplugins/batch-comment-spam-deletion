@@ -5,7 +5,7 @@ Contributors: mordauk
 Donate link: http://pippinsplugins.com/support-the-site
 Tags: comments, spam, comment
 Requires at least: 3.6
-Tested up to: 4.0
+Tested up to: 4.1
 Stable Tag: 1.0.4
 
 Modifies the Empty Spam action in WordPress to process the spam deletion in batches instead of all at once.
