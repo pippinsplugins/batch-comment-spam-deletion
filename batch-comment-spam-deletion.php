@@ -160,7 +160,7 @@ class PW_BCPD {
 			<div id="pw-spam-processing">
 				<p><?php _e( 'The deletion process has started, please be patient. This could take several minutes. You will be automatically redirected when the process is finished.', 'pw-bcsd' ); ?></p>
 				<?php if( ! empty( $total ) ) : ?>
-					<p><strong><?php printf( __( '%d spam comments of %d deleted', 'pw-bcsd' ), $deleted, $total ); ?>
+					<p><strong><?php printf( __( '%d spam comments of %d deleted', 'pw-bcsd' ), $deleted, $total ); ?></strong></p>
 				<?php endif; ?>
 			</div>
 			<script type="text/javascript">
