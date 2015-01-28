@@ -6,7 +6,7 @@ Donate link: http://pippinsplugins.com/support-the-site
 Tags: comments, spam, comment
 Requires at least: 3.6
 Tested up to: 4.1
-Stable Tag: 1.0.4
+Stable Tag: 1.0.5
 
 Modifies the Empty Spam action in WordPress to process the spam deletion in batches instead of all at once.
 
@@ -46,6 +46,10 @@ add_filter( 'pw_bcpd_comments_per_batch', 'pw_bcsd_per_batch' );
 `define( 'PW_BCPD_PER_BATCH', 50 );`
 
 == Changelog ==
+
+= 1.0.5 =
+
+* Fix: missing closing tag
 
 = 1.0.4 =
 
