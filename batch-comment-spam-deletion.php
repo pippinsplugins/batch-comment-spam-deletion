@@ -3,7 +3,7 @@
 Plugin Name: Batch Comment Spam Deletion
 Plugin URL: http://pippinsplugins.com/batch-comment-spam-deletion
 Description: Modifies the Empty Spam action in WordPress to process the spam deletion in batches, allowing you to delete thousands or even hundreds of thousands of spam comments at once without killing your server.
-Version: 1.0.5
+Version: 1.0.6
 Author: Pippin Williamson
 Author URI: http://pippinsplugins.com
 Contributors: mordauk, ghost1227
@@ -139,7 +139,7 @@ class PW_BCPD {
 		if ( 'spam' == $comment_status ) {
 
 			$delete_all = admin_url( 'edit-comments.php?page=pw-bcpd-process' );
-			echo '<a href="' . esc_url( $delete_all ) . '" id="pw_bcpd_empty_spam" class="button apply" style="margin-top:1px;">' . __( 'Empty Spam', 'pw-bcsd' ) . '</a>';
+			echo '<a href="' . esc_url( $delete_all ) . '" id="pw_bcpd_empty_spam" class="button apply" style="margin-top:1px; display: inline-block;">' . __( 'Empty Spam', 'pw-bcsd' ) . '</a>';
 		}
 	}
 
@@ -153,7 +153,7 @@ class PW_BCPD {
 		$step    = isset( $_GET['step'] )        ? absint( $_GET['step'] )   : 1;
 		$total   = isset( $_GET['total'] )       ? absint( $_GET['total'] )  : false;
 		$deleted = round( ( $step * self::$per_batch ), 0 );
-		?> 
+		?>
 		<div class="wrap">
 			<h2><?php _e( 'Empty Spam', 'pw-bcsd' ); ?></h2>
 
@@ -215,9 +215,9 @@ class PW_BCPD {
 		if( $comments ) {
 
 			foreach( $comments as $comment ) {
-				
+
 				wp_delete_comment( $comment->comment_ID, true );
-					
+
 			}
 
 			// comments found so delete them

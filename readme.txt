@@ -5,8 +5,8 @@ Contributors: mordauk
 Donate link: http://pippinsplugins.com/support-the-site
 Tags: comments, spam, comment
 Requires at least: 3.6
-Tested up to: 4.1
-Stable Tag: 1.0.5
+Tested up to: 4.9
+Stable Tag: 1.0.6
 
 Modifies the Empty Spam action in WordPress to process the spam deletion in batches instead of all at once.
 
@@ -33,7 +33,7 @@ Yes, there are two ways to do it.
 `
 <?php
 function pw_bcsd_per_batch( $per_batch ) {
-	
+
 	$per_batch = 50;
 
 	return $per_batch;
@@ -46,6 +46,11 @@ add_filter( 'pw_bcpd_comments_per_batch', 'pw_bcsd_per_batch' );
 `define( 'PW_BCPD_PER_BATCH', 50 );`
 
 == Changelog ==
+
+= 1.0.6 =
+
+* Fix: Delete Spam button displaying improperly
+* Tested with WordPress 4.8 and later
 
 = 1.0.5 =
 
